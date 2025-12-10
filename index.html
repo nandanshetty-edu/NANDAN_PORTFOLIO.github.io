@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nandan • Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <div class="loader-dot"></div>
+      <div class="loader-text">Launching portfolio...</div>
+    </div>
+  </div>
+
+  <!-- Cursor glow -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="nav-left">
+        <img src="NANDAN.JPG" alt="Nandan" class="nav-avatar" />
+        <div class="nav-brand">
+          <div class="nav-logo">NANDAN</div>
+          <div class="nav-tagline">Developer & Creator</div>
+        </div>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="section hero reveal">
+    <div class="hero-left" data-parallax data-speed="0.04">
+      <p class="hero-kicker">WELCOME TO MY PORTFOLIO</p>
+
+      <h1 class="hero-title">
+        Hi, I'm <span class="hero-name">Nandan Shetty</span>
+      </h1>
+      <p class="section-subtitle">
+          I am <span id="typing"></span><span class="typing-cursor"></span>
+        </p>
+
+      <p class="hero-text">
+        I build modern, clean and professional web applications along with creative visuals
+        that feel smooth, fast and user-friendly.
+      </p>
+
+      <div class="hero-cta">
+        <button class="btn btn-primary" data-scroll="#projects">View My Work</button>
+        <button class="btn btn-secondary" data-scroll="#contact">Contact Me</button>
+      </div>
+    </div>
+
+    <div class="hero-right" data-parallax data-speed="-0.03">
+      <div class="hero-photo-wrapper glass">
+        <!-- Replace with your own image -->
+        <img src="NANDAN.JPG" alt="Photo of Nandan" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section reveal">
+    <header class="section-header">
+      <div class="section-icon glass-soft">👤</div>
+      <div>
+        <h2 class="section-title">About Me</h2>
+      </div>
+    </header>
+
+    <div class="about-grid">
+      <div class="about-card glass">
+        <h3>Who I Am</h3>
+        <p>
+          I’m Nandan Shetty, a developer and designer with a focus on building thoughtful, high-quality digital experiences. I combine design clarity with strong engineering to create products, websites and tools that feel intuitive, smooth and genuinely useful.        </p>
+        <p>
+          I love tackling real-world problems, breaking down complex ideas, and crafting solutions that are efficient on the inside and elegant on the outside. Every project I take on is driven by intention, creativity and a commitment to clean, functional execution.</p>
+        <p>
+          I’m currently seeking internships, freelance collaborations or part-time opportunities where I can grow, contribute and bring value through both design and development.
+        </p>
+      </div>
+      <div class="about-card glass">
+        <h3>What I Do</h3>
+        <ul class="about-list">
+          <li><span class="bullet-pill">💻</span> Full Stack Web Development (frontend + backend)</li>
+          <li><span class="bullet-pill">🎨</span> UI / UX layout, wireframes & design systems</li>
+          <li><span class="bullet-pill">🎬</span> Video editing, posters, social media content</li>
+        </ul>
+
+        <div class="about-meta">
+          <h4>Tools & Technologies</h4>
+          <p>
+            HTML, CSS, JavaScript, React, Node.js, C/C++, Python, MongoDB, Git, 
+            basic Docker, CapCut, Photopea, Pixellab, Canva and more.
+          </p>
+          <h4>Strengths</h4>
+          <p>
+            Problem-solving, fast learning, teaching concepts, design sense, communication,
+            handling both technical and creative sides of a project.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section reveal">
+    <header class="section-header">
+      <div class="section-icon glass-soft">🏅</div>
+      <div>
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">
+          Technical and creative skills I use to build websites, tools and content.
+        </p>
+      </div>
+    </header>
+
+    <!-- Skill tabs -->
+    <div class="tabs glass-soft">
+      <button class="tab-btn active" data-target="#skills-technical">Technical Skills</button>
+      <button class="tab-btn" data-target="#skills-creative">Creative Skills</button>
+    </div>
+
+    <!-- Technical skills panel -->
+    <div id="skills-technical" class="tab-panel active">
+      <div class="skills-grid">
+        <div class="skill-card glass">
+          <div class="skill-icon">JS</div>
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-tag">Language</div>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-icon">HT</div>
+          <div class="skill-name">HTML</div>
+          <div class="skill-tag">Markup</div>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-icon">CS</div>
+          <div class="skill-name">CSS</div>
+          <div class="skill-tag">Styling</div>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-icon">Re</div>
+          <div class="skill-name">React</div>
+          <div class="skill-tag">Frontend</div>
+        </div>
+        <div class="skill-card glass extra-skill-tech">
+          <div class="skill-icon">Nd</div>
+          <div class="skill-name">Node.js</div>
+          <div class="skill-tag">Backend</div>
+        </div>
+        <div class="skill-card glass extra-skill-tech">
+          <div class="skill-icon">C</div>
+          <div class="skill-name">C</div>
+          <div class="skill-tag">Language</div>
+        </div>
+        <div class="skill-card glass extra-skill-tech">
+          <div class="skill-icon">C++</div>
+          <div class="skill-name">C++</div>
+          <div class="skill-tag">Language</div>
+        </div>
+        <div class="skill-card glass extra-skill-tech">
+          <div class="skill-icon">Py</div>
+          <div class="skill-name">Python</div>
+          <div class="skill-tag">Language</div>
+        </div>
+        <div class="skill-card glass extra-skill-tech">
+          <div class="skill-icon">Java</div>
+          <div class="skill-name">Java</div>
+          <div class="skill-tag">Language</div>
+        </div>
+        <div class="skill-card glass extra-skill-tech">
+          <div class="skill-icon">DB</div>
+          <div class="skill-name">MongoDB / SQL</div>
+          <div class="skill-tag">Database</div>
+        </div>
+        <div class="skill-card glass extra-skill-tech">
+          <div class="skill-icon">Gt</div>
+          <div class="skill-name">Git & GitHub</div>
+          <div class="skill-tag">Version Control</div>
+        </div>
+
+        <div class="skill-card glass extra-skill-tech">
+          <div class="skill-icon">Dv</div>
+          <div class="skill-name">Basic Docker</div>
+          <div class="skill-tag">Tools</div>
+        </div>
+      </div>
+      <button id="skillsTechMore" class="btn btn-secondary view-more-btn">View More</button>
+    </div>
+
+    <!-- Creative skills panel -->
+    <div id="skills-creative" class="tab-panel">
+      <div class="skills-grid">
+        <div class="skill-card glass">
+          <div class="skill-icon">CC</div>
+          <div class="skill-name">CapCut</div>
+          <div class="skill-tag">Video Editing</div>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-icon">Cv</div>
+          <div class="skill-name">Canva</div>
+          <div class="skill-tag">Poster / Slides</div>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-icon">PP</div>
+          <div class="skill-name">Photopea</div>
+          <div class="skill-tag">Photo Editing</div>
+        </div>
+        <div class="skill-card glass">
+          <div class="skill-icon">PS</div>
+          <div class="skill-name">PhotoShop</div>
+          <div class="skill-tag">Photo Editing</div>
+        </div>
+        
+
+        <!-- Extra creative skills -->
+         <div class="skill-card glass extra-skill-creative">
+          <div class="skill-icon">Px</div>
+          <div class="skill-name">Pixellab</div>
+          <div class="skill-tag">photo Editing</div>
+        </div>
+        <div class="skill-card glass extra-skill-creative">
+          <div class="skill-icon">AM</div>
+          <div class="skill-name">Alight motion</div>
+          <div class="skill-tag">Video Editing</div>
+        </div>
+        <div class="skill-card glass extra-skill-creative">
+          <div class="skill-icon">GM</div>
+          <div class="skill-name">GIMP</div>
+          <div class="skill-tag">Photo Editing</div>
+        </div>
+        <div class="skill-card glass extra-skill-creative">
+          <div class="skill-icon">Fl</div>
+          <div class="skill-name">Filmora</div>
+          <div class="skill-tag">Video Editing</div>
+        </div>
+      </div>
+      <button id="skillsCreativeMore" class="btn btn-secondary view-more-btn">View More</button>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section projects-section reveal">
+    <header class="section-header">
+      <div class="section-icon glass-soft">💼</div>
+      <div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">
+          A quick look at some of my technical and creative work.
+        </p>
+      </div>
+    </header>
+
+    <div class="tabs glass-soft">
+      <button class="tab-btn active" data-target="#projects-technical">Technical Projects</button>
+      <button class="tab-btn" data-target="#projects-creative">Creative Projects</button>
+    </div>
+
+<!-- Technical projects -->
+<div id="projects-technical" class="tab-panel active">
+  <div class="project-grid">
+
+    <!-- Visible by default (4 projects) -->
+    <article class="project-card glass">
+      <div class="project-image">
+        <img src="vp/codeinsighty.jpg" alt="C Visualizer Preview">
+      </div>
+      <h3>C Visualizer</h3>
+      <p class="project-desc">
+        An interactive tool that helps students understand C code execution step-by-step.
+      </p>
+      <p class="project-tech">Tech: HTML, CSS, JavaScript, C logic</p>
+      <ul class="project-features">
+        <li>Step-by-step execution</li>
+        <li>Shows memory & variables</li>
+        <li>Perfect for teaching</li>
+      </ul>
+    </article>
+
+    <article class="project-card glass">
+      <div class="project-image">
+        <img src="vp/application.png" alt="Task Manager">
+      </div>
+      <h3>Advanced Application Portal</h3>
+      <p class="project-desc">
+        A fully interactive, AI-enhanced student application system.
+      </p>
+      <p class="project-tech">Tech: HTML, CSS, JS</p>
+      <ul class="project-features">
+        <li>Smart Multi-Step Application Form </li>
+        <li>Instant PDF export</li>
+        <li>Advanced admin analytics</li>
+        <li>Full submission management</li>
+      </ul>
+    </article>
+
+    <article class="project-card glass">
+      <div class="project-image">
+        <img src="vp/c++.png" alt="c++">
+      </div>
+      <h3>Bike & Car Rental System</h3>
+      <p class="project-desc">
+        A console-based application to manage bike and car rentals with clean input forms and automated billing.
+      </p>
+      <p class="project-tech">Tech: C++ </p>
+      <ul class="project-features">
+        <li>Vehicle booking and return</li>
+        <li>Separate bike/car rental options</li>
+        <li>Automatic fare calculation</li>
+        <li>Customer details and receipt generation</li>
+      </ul>
+    </article>
+
+    <article class="project-card glass">
+      <div class="project-image">
+        <img src="vp/portfolio.png" alt="Portfolio Website">
+      </div>
+      <h3>Portfolio Website</h3>
+      <p class="project-desc">
+        The Portfolio website designed to showcase my skills and projects.
+      </p>
+      <p class="project-tech">Tech: HTML, CSS, JS</p>
+    </article>
+
+    <!-- Extra (hidden until View More if you re-enable) -->
+    <article class="project-card glass extra-project-tech">
+      <div class="project-image">
+        <img src="vp/controller.png" alt="AI Chatbot">
+      </div>
+      <h3>AI Gesture Controller</h3>
+      <p class="project-desc">A Python-based AI gesture recognition system that controls PPT/PDF presentations using real-time hand tracking, motion prediction, and high-precision gesture classification.</p>
+      <p class="project-tech">Tech: Python, MediaPipe, OpenCV, PyAutoGUI, AI Motion Prediction</p>
+      <ul class="project-features">
+        <li>AI-enhanced hand-gesture tracking</li>
+        <li>Swipe to change PPT/PDF slides</li>
+        <li>Air cursor + pinch click & drag</li>
+        <li>Smart undo, draw, and lock modes</li>
+      </ul>
+    </article>
+
+  </div>
+  <button id="projectsTechMore" class="btn btn-secondary view-more-btn">View More</button>
+</div>
+
+
+  <!-- CREATIVE PROJECTS -->
+<div id="projects-creative" class="tab-panel">
+  <div class="project-grid">
+
+    <!-- DEFAULT VISIBLE ITEMS -->
+    <article class="project-card glass media-card"
+      data-type="video"
+      data-src="videos/reel1.mp4">
+      <div class="media-wrapper">
+        <video src="vp/v1.mp4" muted></video>
+      </div>
+      <h3>Instagram Reels Edit</h3>
+      <p class="project-desc">Trendy short-form social media edits.</p>
+    </article>
+
+    <article class="project-card glass media-card"
+      data-type="video"
+      data-src="videos/cinematic.mp4">
+      <div class="media-wrapper">
+        <video src="vp/v2.mp4" muted loop playsinline></video>
+      </div>
+      <h3>Cinematic Edit</h3>
+      <p class="project-desc">Cinematic color grading and transitions.</p>
+    </article>
+
+    <article class="project-card glass media-card"
+      data-type="image"
+      data-src="images/poster1.jpg">
+      <div class="media-wrapper">
+        <img src="vp/freshers.jpg" />
+      </div>
+      <h3>Poster Designing</h3>
+      <p class="project-desc">Event posters & promotional designs.</p>
+    </article>
+
+    <article class="project-card glass media-card"
+      data-type="image"
+      data-src="images/poster1.jpg">
+      <div class="media-wrapper">
+        <img src="vp/videoediting.jpg" />
+      </div>
+      <h3>Poster Designing</h3>
+      <p class="project-desc">Event posters & promotional designs.</p>
+    </article>
+
+
+    <!-- EXTRA ITEMS (HIDDEN INITIALLY) -->
+    <article class="project-card glass media-card extra-project-creative"
+      data-type="image"
+      data-src="images/brandkit.jpg">
+      <div class="media-wrapper">
+        <img src="vp/navomesh.jpg" />
+      </div>
+      <h3>Brand Identity</h3>
+      <p class="project-desc">Basic branding kit for individuals/creators.</p>
+    </article>
+
+    <article class="project-card glass media-card extra-project-creative"
+      data-type="image"
+      data-src="images/brandkit.jpg">
+      <div class="media-wrapper">
+        <img src="vp/ai.jpg" />
+      </div>
+      <h3>Brand Identity</h3>
+      <p class="project-desc">Basic branding kit for individuals/creators.</p>
+    </article>
+
+    <!-- <article class="project-card glass media-card extra-project-creative"
+      data-type="video"
+      data-src="videos/transition.mp4">
+      <div class="media-wrapper">
+        <video src="videos/transition.mp4" muted></video>
+      </div>
+      <h3>Transition Reel</h3>
+      <p class="project-desc">High-speed transitions with effects.</p>
+    </article> -->
+
+  </div>
+
+  <button id="projectsCreativeMore" class="btn btn-secondary view-more-btn">
+    View More
+  </button>
+</div>
+
+
+<!-- FIXED MEDIA POPUP -->
+<div id="mediaPopup" class="media-popup">
+  <div class="popup-backdrop"></div>
+
+  <div class="popup-box">
+    <span id="popupClose" class="popup-close">&times;</span>
+    <div id="popupContent" class="popup-content"></div>
+  </div>
+</div>
+
+
+</div>
+
+  <!-- Education -->
+  <section id="education" class="section reveal">
+    <header class="section-header">
+      <div class="section-icon glass-soft">🎓</div>
+      <div>
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">
+          A quick overview of my academic background.
+        </p>
+      </div>
+    </header>
+
+    <div class="timeline">
+      <div class="timeline-card glass">
+        <div class="timeline-main">
+          <div>
+            <h3>Bachelor of Technology in Computer Science</h3>
+            <p class="timeline-institute">Moodlakatte institute of technology</p>
+          </div>
+          <span class="timeline-year">2023 - 2027</span>
+        </div>
+        <p class="timeline-extra">
+          Achievements: Cultural events, tech fests, presentations and competitions.
+        </p>
+      </div>
+      <div class="timeline-card glass">
+        <div class="timeline-main">
+          <div>
+            <h3>Pre-University (PUC)</h3>
+            <p class="timeline-institute">Green valley international PU collage</p>
+          </div>
+          <span class="timeline-year">2021 - 2023</span>
+        </div>
+        <p class="timeline-extra">
+          Activities: competitions & Ruby house vice captian.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+<section id="certifications" class="section reveal">
+  <header class="section-header">
+    <div class="section-icon glass-soft">📜</div>
+    <div>
+      <h2 class="section-title">Certifications</h2>
+      <p class="section-subtitle">
+        Some of the certificates I've earned.
+      </p>
+    </div>
+  </header>
+
+  <div class="cert-grid">
+
+    <!-- Just replace src="" with your certificate images -->
+    <article class="cert-card glass">
+      <div class="cert-thumb">
+        <img src="cert/videography.jpg" alt="Certificate" />
+      </div>
+      <h3>VIDEOGRAPHY</h3>
+      <p class="cert-meta">Moodlakatte institute of technology</p>
+    </article>
+
+    <article class="cert-card glass">
+      <div class="cert-thumb">
+        <img src="cert/mongoDB.jpg" alt="Certificate" />
+      </div>
+      <h3>MongoDB</h3>
+      <p class="cert-meta">Moodlakatte institute of technology</p>
+    </article>
+
+    <article class="cert-card glass">
+      <div class="cert-thumb">
+        <img src="cert/aloysius.jpg" alt="Certificate" />
+      </div>
+      <h3>VIDEOGRAPHY</h3>
+      <p class="cert-meta">St. Aloysius</p>
+    </article>
+
+    <article class="cert-card glass">
+      <div class="cert-thumb">
+        <img src="cert/logo.jpg" alt="Certificate" />
+      </div>
+      <h3>LOGO DESIGN</h3>
+      <p class="cert-meta">moodlakatte institute of technology</p>
+    </article>
+    <article class="cert-card glass">
+      <div class="cert-thumb">
+        <img src="cert/madva.jpg" alt="Certificate" />
+      </div>
+      <h3>PARTICIPATION</h3>
+      <p class="cert-meta">SMVIT</p>
+    </article>
+    <article class="cert-card glass">
+      <div class="cert-thumb">
+        <img src="cert/photography.jpg" alt="Certificate" />
+      </div>
+      <h3>PHOTOGTAPHY</h3>
+      <p class="cert-meta">Moodlakatte institute of technology</p>
+    </article>
+    <article class="cert-card glass">
+      <div class="cert-thumb">
+        <img src="cert/tcs.jpg" alt="Certificate" />
+      </div>
+      <h3>TechBytes</h3>
+      <p class="cert-meta">TCS</p>
+    </article>
+    <article class="cert-card glass">
+      <div class="cert-thumb">
+        <img src="cert/quiz.jpg" alt="Certificate" />
+      </div>
+      <h3>MindMaze (quiz)</h3>
+      <p class="cert-meta"> Moodlakatte institute of technology</p>
+    </article>
+    <article class="cert-card glass">
+      <div class="cert-thumb">
+        <img src="cert/working.jpg" alt="Certificate" />
+      </div>
+      <h3>Course / Certification Title</h3>
+      <p class="cert-meta">Concerened for working children</p>
+    </article>
+
+  </div>
+</section>
+
+
+  <!-- Resume download -->
+  <section id="resume" class="section resume-section reveal">
+    <h2 class="section-title center">Resume</h2>
+    <p class="section-subtitle center">
+      Download my latest resume as a PDF with complete details.
+    </p>
+    <div class="resume-box">
+      <a href="resume.pdf" download class="btn btn-primary">
+        ⬇ Download Resume (PDF)
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section reveal">
+    <header class="section-header">
+      <div class="section-icon glass-soft">✉️</div>
+      <div>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">
+          Reach out for internships, freelance work, collaborations or any questions.
+        </p>
+      </div>
+    </header>
+
+    <div class="contact-grid">
+      <div class="contact-info glass">
+        <h3>Contact Details</h3>
+        <p><strong>Email:</strong> nandanshetty.edu@gmail.com</p>
+        <p><strong>Phone:</strong> +91-9620313839</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/nandanshetty-edu" target="_blank">https://github.com/nandanshetty-edu</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nandan-shetty2005" target="_blank">https://www.linkedin.com/in/nandan-shetty2005</a></p>
+      </div>
+
+      <form class="contact-form glass">
+        <h3>Send a Message</h3>
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" placeholder="Write your message..."></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary full">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © <span id="year"></span>NANDAN SHETTY
+  </footer>
+
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+</html>
